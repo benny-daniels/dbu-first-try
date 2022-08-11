@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Welcome to the DBU",
+            href: "/start"
+          },
+          {
+            text: "Who we are",
+            href: "Whoweare"
+          },
+          {
+
+          }
+        ]
+      }) }}
+      <h1 class="govuk-heading-xl">
+        Who we are
+      </h1>
+
+      <p> This page should contain a brief history of the DBU such as when
+         and why it was founded as well as some information about its
+        current leadership team.
+        It may be easier to just signpost people to the PSC website for SLT bios </p>
+      <form class="form" action="/who-we-are-answer" method="post">
+
+         {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+      {{ govukRadios({
+        idPrefix: "where-would-you-like-to-go-next",
+        name: "where-would-you-like-to-go-next",
+        fieldset: {
+          legend: {
+            text: "Where would you like to go next?",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "a-day-in-the-life",
+            text: "A day in the life of a DBU member"
+          },
+          {
+            value: "our-clients",
+            text: "Our clients and how we help them"
+          }
+        ]
+      }) }}
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+      </form>
+
+
+      <p>To learn more about The PSC <a href="https://thepsc.co.uk/">visit our website</a>.</p>
+
+    </div>
+  </div>
+
+{% endblock %}

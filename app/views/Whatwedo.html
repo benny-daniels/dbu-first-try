@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start">Welcome to the DBU</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="Whatwedo">What we do</a>
+      </li>
+    </ol>
+  </div>
+
+    <h1 class="govuk-heading-xl">
+        What we do
+      </h1>
+
+      <p>This page will give a brief introduction of the work we do as well as
+        giving a brief introduction to a potential client journey the rest of
+        the site leads to from bids to strategy all the way through to a potential audit. </p>
+
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+<a href="/bids">
+{{ govukButton({
+  text: "Continue"
+}) }}
+
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Welcome to the DBU",
+            href: "/start"
+          },
+          {
+            text: "Who we are",
+            href: "Whoweare"
+          },
+          {
+            text: "Our clients and how we help them",
+            href: "Ourclientsandhowwehelp"
+          }
+        ]
+      }) }}
+      <h1 class="govuk-heading-xl">
+        Our clients and how we help them
+      </h1>
+
+      <p> This could include some kind of image cloud about all the clients
+         we work with or else a stat (e.g. 15 clients helped this year etc...)</p>
+
+         {% from "govuk/components/radios/macro.njk" import govukRadios %}
+    <form class= "form" action= "/where-to-next-answer" method="post">
+         {{ govukRadios({
+           idPrefix: "where-to-next",
+           name: "where-to-next",
+           fieldset: {
+             legend: {
+               text: "Where to next?",
+               isPageHeading: true,
+               classes: "govuk-fieldset__legend--l"
+             }
+           },
+           items: [
+             {
+               value: "day-in-the-life",
+               text: "A day in the life of a DBU member"
+             },
+             {
+               value: "What-we-do",
+               text: "What we do"
+             },
+
+
+             {
+               divider: "or"
+             },
+             {
+               value: "back-to-start",
+               text: "Back to start"
+             }
+           ]
+
+         }) }}
+       <button class="govuk-button" data-module="govuk-button">Continue</button>
+       </form>
+
+      <p>To learn more about The PSC <a href="https://thepsc.co.uk/">Visit our website</a>.</p>
+
+    </div>
+  </div>
+
+{% endblock %}
