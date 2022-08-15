@@ -26,7 +26,7 @@ router.post('/who-we-are-answer', function (req, res) {
   // Check whether the variable matches a condition
   if (whowearemore == "a-day-in-the-life"){
     // Send user to day in the life page
-    res.redirect('/Dayinthelife')
+    res.redirect('/DayintheLife')
   } else {
     // Send user to clients page
     res.redirect('/Ourclientsandhowwehelp')
