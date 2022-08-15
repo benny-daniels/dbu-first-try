@@ -31,13 +31,16 @@
         ]
       }) }}
       <h1 class="govuk-heading-xl">
-        A day in the life of a DBU employee
+        A day in the life of a consultant on a DBU project
       </h1>
 
-      <p>This page is intended to talk about the key skills a joiner who works
-         on a dbu project might learn as compared to the other BUs. It could
-         introduce the idea of software prototyping as well as the basics of the GDS.
-       Finally, it may want to talk about general company structure, e.g. ACs work projects for several BUs whilst senior managers specialise.</p>
+      <p>Generalist consultants are needed throughout DBU projects but their biggest involvement is often at the beta stage: </P>
+         <p>Here you might design some basic services, (like this one) based on ideas developed in the alpha stage.
+        You might also run some service testing,
+        speaking to users to make sure whatever is built suits their needs. </P>
+      <p>  Other key skills, like project managment and communicating with software developers,
+         are also required on beta projects alongside
+        more conventional consulting techniques like problem solving and client influencing. </p>
 
 
      {% from "govuk/components/radios/macro.njk" import govukRadios %}
@@ -61,7 +64,10 @@
            value: "What-we-do",
            text: "What we do"
          },
-
+         {
+           value: "digi-types",
+           text: "Discovery, alpha and beta services"
+         },
 
          {
            divider: "or"

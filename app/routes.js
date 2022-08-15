@@ -52,6 +52,10 @@ router.post('/where-to-next-answer', function (req, res) {
         if (learnmore == "who-we-are"){
           // Send user to next page
           res.redirect('/Whoweare')}
+    if (learnmore == "digi-types"){
+            // Send user to next page
+            res.redirect('/digital-services')}
+
   else {
     // Send user to who we are
     res.redirect('/Ourclientsandhowwehelp')
