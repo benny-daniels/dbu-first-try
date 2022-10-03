@@ -59,11 +59,78 @@
 
       <h2 class="govuk-heading-m">What is the Prototyping Kit</h2>
 
+      {% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{{ govukInsetText({
+  text: "This section is based on the original prototype kit tutorial and hence contains public sector information licensed under the Open Government Licence v3.0."
+}) }}
+
+      <p>When making <a href="https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/">high fidelity prototypes</a>, we want them to look like the service we're designing. For central government services, we want to make them look like they belong to <a href="https://www.gov.uk/">GOV.UK</a>.</p>
+
+      <p>To do this, we can use the <a href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK Prototype Kit</a>. It lets us make hi-fi prototypes to use for testing, and sharing with developers to help them understand what needs to be achieved by the final service.</p>
+
+      <p>It contains templates for <a href="https://govuk-prototype-kit.herokuapp.com/docs/tutorials-and-examples">pages</a> and <a href="https://design-system.service.gov.uk/">components</a>, as well as <a href="https://govuk-prototype-kit.herokuapp.com/docs/make-first-prototype/start">guides</a> on how to use them to develop a working prototype.</p>
+
       <h2 class="govuk-heading-m">How to use the Prototyping Kit</h2>
+
+      <p>The Prototyping Kit is intended to help make the process of high-fidelity prototyping easier, as you develop your <a href="https://www.interaction-design.org/literature/article/prototyping-learn-eight-common-methods-and-best-practices">low-fi prototypes</a> for further testing.</p>
+
+      <p>The <a href="https://www.interaction-design.org/literature/topics/prototyping">prototyping process</a> is about feedback and iteration, not making the perfect product first time. Think of your prototypes as a tool for conversation with users and stakeholders, rather than completed products. It's generally better to share early and often.</p>
+
+      <p>It can be helpful to develop several different versions, in order to <a href="https://medium.com/ucsddesignco/iterative-vs-parallel-prototyping-575d455da5b5">prototype in parallel</a>.</p>
 
       <h3 class="govuk-heading-s">Tech in The PSC</h3>
 
+      <p>The Kit has some prerequisites which have to be in place to use it, including <a href="https://nodejs.org/en/">Node</a> and <a href="https://www.anaconda.com/products/distribution">python</a>.</p>
+      
+      <p>Code written using the Kit should also be saved in the open, using <a href="https://git-scm.com/download/win">Git (64-bit)</a>. This lets you work collaboratively with your team.</p>
+      
+      <p>In The PSC, we use the Prototyping Kit through <a href="https://code.visualstudio.com/">Visual Studio Code</a>, a lightweight development environment designed for writing and running code. It presents code in an easy to read form to help you write code quickly and avoid errors.</p>
+
+      <p>See the help and guidance links below if you're unsure about how to install or use any of these tools. You can also discuss them with your project team.</p>
+
       <h2 class="govuk-heading-m">Links to help and guidance</h2>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            The PSC prototyping guide
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          The PSC has a <a href="https://fedup-prog-course.herokuapp.com/index.html">guide to help you use the Prototyping Kit</a>, developed as part of DBU Training materials, including how to set up the prerequisites required to start using the kit.
+        </div>
+      </details>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Other design systems
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Other government departments and countries have created design systems and resources available for use. You can find a <a href="https://github.com/ctdesign/gov-design-systems-list">list of alternative design systems</a> on Git.
+        </div>
+      </details>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Further training and coding support
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          More training on HTML, CSS and JavaScript is available.
+          <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="https://www.w3schools.com/html/default.asp">W3 Schools</a>
+          </li>
+          <li>
+            <a href="https://www.codecademy.com/learn/learn-html">Codecademy</a>
+          </li>
+          </ul>
+        </div>
+      </details>
       
     </div>
 
