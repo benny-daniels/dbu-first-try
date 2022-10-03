@@ -4,6 +4,53 @@
   Content page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header" 
+          id="myHeader" 
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/" 
+          style="font-family: 'Playfair Display'; 
+                font-size: 40px; 
+                color: #1C1E57; 
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display'; 
+                color: #1C1E57; 
+                font-size: 15px; 
+                font-weight: lighter; 
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
 {% block beforeContent %}
   <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 {% endblock %}
@@ -117,6 +164,38 @@ Antonio believes that the strength, resilience and performance of public service
       <p>To learn about the rest of the PSC's hard working team  <a href="https://thepsc.co.uk/team#theTeam">visit our website</a>.</p>
 </div>
     </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Website navigation
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="home">
+                Home
+              </a>
+              <p></p>
+            </li>
+            <li>
+              <a href="Prototype">
+                GOV.UK Prototyping kit
+              </a>
+              <p style="font-style: italic; font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+            </li>
+            <li>
+              <a href="DBU-work">
+                Working in the DBU
+              </a>
+              <p style="font-style: italic; font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
   </div>
 
 {% endblock %}
