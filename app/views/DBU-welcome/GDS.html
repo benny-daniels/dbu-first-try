@@ -114,7 +114,26 @@
 
     </div>
 
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-one-third" id="navBar">
+
+      <style>
+        #navBar {
+           position: sticky;
+           top: 160px;
+         }
+       </style>
+       <script>
+         window.onscroll = function() {myFunction()};
+         var navBar = document.getElementByID("navBar");
+         var sticky = navBar.offsetTop;
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             navBar.classList.add("sticky");
+           } else {
+             navBar.classList.remove("sticky");
+           }
+         }
+       </script>
 
       <aside class="app-related-items" role="complementary">
         <h2 class="govuk-heading-m" id="subsection-title">

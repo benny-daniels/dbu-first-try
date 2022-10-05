@@ -61,6 +61,8 @@
         Working in the DBU
       </h1>
 
+      <p>You can find more information in the <a href="https://docs.google.com/presentation/d/1crd50vqp0TR8ZTVzIPDNzB_hYPMZFYNiHvJ8Qv6KvGk/edit?usp=sharing">Welcome to the DBU induction pack</a>.</p>
+
       <h2 class="govuk-heading-m">DBU projects and ways of working</h2>
 
       <p>The DBU works across three areas:</p>
@@ -75,13 +77,49 @@
 
       <h3 class="govuk-heading-s">Planning a DBU project</h3>
 
-      <p>[Roadmaps, epics, stories]</p>
+      <p>The high-level strategic plan for a project is called the roadmap. It is used for communicating milestones and objectives, and includes actions being taken 'Now', 'Next' and 'Later'. The <a href="https://www.notifications.service.gov.uk/features/roadmap">GOV.UK Notify roadmap</a> gives an example of how they work.</p>
       
+      <p>More detailed planning is done through managing the <a href="https://www.atlassian.com/agile/scrum/backlogs">backlog</a>, a prioritised list of the work required, derived from the roadmap.</p>
+
+      <p>Backlogs are composed of <a href="https://www.atlassian.com/agile/project-management/user-stories">stories</a>, explanations of individual software features and how they will help users. These are grouped into <a href="https://www.atlassian.com/agile/project-management/epics">epics</a>, a group of stories related to a single deliverable.</p>
+
       <h2 class="govuk-heading-m">Members of the DBU team</h2>
 
-      <p>Any generalist consultants could be part of the DBU. You can find out more about the current members of the DBU and what they've been up to on <a href="https://thepsc.co.uk/digital/">The PSC website</a>.</p>
+      <p>Any generalist consultant could be part of the DBU. Teams are generally around 3-10 people. Your role varies depending on the <a href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team">role you take on in the service team</a>.</p>
       
-      <p>[Team roles]</p>
+      <p>You can find out more about the current members of the DBU and what they've been up to on <a href="https://thepsc.co.uk/digital/">The PSC website</a>.</p>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Roles in a DBU team
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          The <a href="GDS">GDS Service Standards</a> suggest the following team members are necessary:
+          <ul>
+            <li><a href="https://www.gov.uk/guidance/product-manager">Product manager</a></li>
+            <li><a href="https://www.gov.uk/guidance/service-owner">Service owner</a></li>
+            <li><a href="https://www.gov.uk/guidance/delivery-manager">Delivery manager</a></li>
+            <li><a href="https://www.gov.uk/guidance/user-researcher">User researcher</a></li>
+            <li><a href="https://www.gov.uk/guidance/content-designer">Content designer</a></li>
+            <li>Designer - <a href="https://www.gov.uk/guidance/interaction-designer">interaction designer</a>, <a href="https://www.gov.uk/guidance/service-designer">service designer</a>, and/or <a href="https://www.gov.uk/guidance/graphic-designer">graphic designer</a></li>
+            <li><a href="https://www.gov.uk/guidance/software-developer">Developer</a></li>
+          </ul>
+          Sometimes other team members are needed as well, including:
+          <ul>
+            <li><a href="https://www.gov.uk/guidance/performance-analyst">Performance analyst</a></li>
+            <li><a href="https://www.gov.uk/guidance/technical-architect">Technical architect</a></li>
+            <li><a href="https://www.gov.uk/guidance/development-operations-devops-engineer">DevOps engineer</a></li>
+            <li><a href="https://www.gov.uk/guidance/business-analyst--2">Business analyst</a></li>
+            <li><a href="https://www.gov.uk/guidance/quality-assurance-testing-qat-analyst">Quality assurers and testers</a></li>
+            <li><a href="https://www.gov.uk/guidance/technical-writer">Technical writers</a></li>
+          </ul>
+          <p>In the DBU, junior team members are mostly likely to take on the roles of user researcher, content designer and business analyst.</p>
+          <p>Senior team members are likely to take on the product manager and delivery manager roles.</p>
+          <p>All team members are likely to play roles as quality assurers and testers.</p>
+        </div>
+      </details>
 
       <h2 class="govuk-heading-m">Skills to learn and develop</h2>
 
@@ -90,12 +128,41 @@
       <p>[User research - methods, products, UX design links]</p>
       <p>[Prototyping - link to Prototyping Kit]</p>
 
-      <p>The slides below give a general overview of life in the DBU.</p>
+      <h2 class="govuk-heading-m">Links to help and guidance</h2>
 
-      <iframe src="https://docs.google.com/presentation/d/1crd50vqp0TR8ZTVzIPDNzB_hYPMZFYNiHvJ8Qv6KvGk/edit?usp=sharing" height="389" width="640"></iframe>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            The PSC prototyping guide
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          The PSC has a <a href="https://fedup-prog-course.herokuapp.com/index.html">guide to help you use the Prototyping Kit</a>, developed as part of DBU Training materials, including how to set up the prerequisites required to start using the kit.
+        </div>
+      </details>
+
     </div>
 
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-one-third" id="navBar">
+
+      <style>
+        #navBar {
+           position: sticky;
+           top: 160px;
+         }
+       </style>
+       <script>
+         window.onscroll = function() {myFunction()};
+         var navBar = document.getElementByID("navBar");
+         var sticky = navBar.offsetTop;
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             navBar.classList.add("sticky");
+           } else {
+             navBar.classList.remove("sticky");
+           }
+         }
+       </script>
 
       <aside class="app-related-items" role="complementary">
         <h2 class="govuk-heading-m" id="subsection-title">
