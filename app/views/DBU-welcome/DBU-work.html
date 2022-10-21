@@ -1,0 +1,292 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Working in the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header" 
+          id="myHeader" 
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/" 
+          style="font-family: 'Playfair Display'; 
+                font-size: 40px; 
+                color: #1C1E57; 
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display'; 
+                color: #1C1E57; 
+                font-size: 15px; 
+                font-weight: lighter; 
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+      <h1 class="govuk-heading-xl">
+        Working in the DBU
+      </h1>
+
+      <p>You can find out about life in the DBU in more detail in the <a href="https://docs.google.com/presentation/d/1crd50vqp0TR8ZTVzIPDNzB_hYPMZFYNiHvJ8Qv6KvGk/edit?usp=sharing">Welcome to the DBU induction pack</a>.</p>
+
+      <h2 class="govuk-heading-m">DBU projects and ways of working</h2>
+
+      <p>The DBU works across three areas:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Strategy and audit</li>
+        <li>Investment cases</li>
+        <li>Digital service delivery and programme management</li>
+      </ul>
+      <p>Many projects have a similar structure and way of working to projects in other Business Units. Digital service delivery projects, however, have a different structure. These consist of three phases - <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works">discovery</a>, <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works">alpha</a>, and <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works">beta</a>.</p>
+
+      <p>In all DBU projects, we follow <a href="https://www.gov.uk/service-manual/agile-delivery">agile methodology</a>, specifically the <a href="https://www.atlassian.com/agile/scrum">scrum framework</a>, structuring work in two-week 'sprints'. The ideas behind this are laid out in the <a href="https://agilemanifesto.org/">agile manifesto</a> and <a href="https://agilemanifesto.org/principles.html">principles</a>.</p>
+
+      <h3 class="govuk-heading-s">Planning a DBU project</h3>
+
+      <p>The high-level strategic plan for a project is called the roadmap. It is used for communicating milestones and objectives, and includes actions being taken 'Now', 'Next' and 'Later'. The <a href="https://www.notifications.service.gov.uk/features/roadmap">GOV.UK Notify roadmap</a> gives an example of how they work.</p>
+      
+      <p>More detailed planning is done through managing the <a href="https://www.atlassian.com/agile/scrum/backlogs">backlog</a>, a prioritised list of the work required, derived from the roadmap.</p>
+
+      <p>Backlogs are composed of <a href="https://www.atlassian.com/agile/project-management/user-stories">stories</a>, explanations of individual software features and how they will help users. These are grouped into <a href="https://www.atlassian.com/agile/project-management/epics">epics</a>, a group of stories related to a single deliverable.</p>
+
+      <h2 class="govuk-heading-m">Members of the DBU team</h2>
+
+      <p>Any generalist consultant could be part of the DBU. Teams are generally around 3-10 people. Your role varies depending on the <a href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team">role you take on in the service team</a>.</p>
+      
+      <p>You can find out more about the current members of the DBU and what they've been up to on <a href="https://thepsc.co.uk/digital/">The PSC website</a>.</p>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Roles in a DBU team
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          The <a href="GDS">GDS Service Standards</a> suggest the following team members are necessary:
+          <ul>
+            <li><a href="https://www.gov.uk/guidance/product-manager">Product manager</a></li>
+            <li><a href="https://www.gov.uk/guidance/service-owner">Service owner</a></li>
+            <li><a href="https://www.gov.uk/guidance/delivery-manager">Delivery manager</a></li>
+            <li><a href="https://www.gov.uk/guidance/user-researcher">User researcher</a></li>
+            <li><a href="https://www.gov.uk/guidance/content-designer">Content designer</a></li>
+            <li>Designer - <a href="https://www.gov.uk/guidance/interaction-designer">interaction designer</a>, <a href="https://www.gov.uk/guidance/service-designer">service designer</a>, and/or <a href="https://www.gov.uk/guidance/graphic-designer">graphic designer</a></li>
+            <li><a href="https://www.gov.uk/guidance/software-developer">Developer</a></li>
+          </ul>
+          Sometimes other team members are needed as well, including:
+          <ul>
+            <li><a href="https://www.gov.uk/guidance/performance-analyst">Performance analyst</a></li>
+            <li><a href="https://www.gov.uk/guidance/technical-architect">Technical architect</a></li>
+            <li><a href="https://www.gov.uk/guidance/development-operations-devops-engineer">DevOps engineer</a></li>
+            <li><a href="https://www.gov.uk/guidance/business-analyst--2">Business analyst</a></li>
+            <li><a href="https://www.gov.uk/guidance/quality-assurance-testing-qat-analyst">Quality assurers and testers</a></li>
+            <li><a href="https://www.gov.uk/guidance/technical-writer">Technical writers</a></li>
+          </ul>
+          <p>In the DBU, junior team members are mostly likely to take on the roles of user researcher, content designer and business analyst.</p>
+          <p>Senior team members are likely to take on the product manager and delivery manager roles.</p>
+          <p>All team members are likely to play roles as quality assurers and testers.</p>
+        </div>
+      </details>
+
+      <h2 class="govuk-heading-m">Skills to learn and develop</h2>
+
+      <p>Projects in the DBU require some generalist skills also used in other Business Units.</p>
+      <p><b>Numerical analysis</b> is used to understand the context and content of projects, and communicate findings with stakeholders. Techniques include modelling, statistical analysis, and data visualisation.</p>
+      <p><b>Business analysis</b> is used to define needs and understand potential solutions in an organisational context. Techniques and tools include <a href="https://www.agilebusiness.org/dsdm-project-framework/moscow-prioririsation.html">MoSCoW rating</a>, the <a href="https://www.productplan.com/glossary/action-priority-matrix/">Action Priority matrix</a>, <a href="https://www.mindtools.com/pages/article/newTMC_05.htm">SWOT analyses</a>, <a href="https://hbr.org/2012/06/managing-risks-a-new-framework">risk management</a>, and the <a href="https://www.mindtools.com/pages/article/newTMC_5W.htm">5 Whys</a>, among many others.</p>
+      
+      <p>Many projects also present opportunities to learn some skills specific to the DBU.</p>
+      <p><b>User research</b> is a core feature of <a href="https://xd.adobe.com/ideas/career-tips/what-is-ux-design/">user-centred (UX) design</a>, helping to understand user needs, and test products to ensure they meet them. Techniques include <a href="https://www.interaction-design.org/literature/topics/user-interviews">interviews</a>, <a href="https://www.interaction-design.org/literature/article/how-to-conduct-user-observations">observations</a> and <a href="https://www.userinterviews.com/ux-research-field-guide-chapter/surveys">surveys</a>. Insights can be gathered in a user needs databases, and used to create <a href="https://www.nngroup.com/articles/journey-mapping-101/">user journeys</a>, <a href="https://www.nngroup.com/articles/empathy-mapping/">empathy maps</a> and <a href="https://xd.adobe.com/ideas/process/user-research/putting-personas-to-work-in-ux-design/">user personas</a>, among others.</p>
+      <p><b>Prototyping</b> is used throughout <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works">alpha</a> and <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works">beta</a> stages of digital service design projects, to test and iterate ideas. More detail on the skills required, and guidance on how to develop them can be found on the <a href="Prototype">GOV.UK Prototyping kit page</a>.</p>
+
+      <h2 class="govuk-heading-m">Links to help and guidance</h2>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Generalist skills (FEP)
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          The PSC's <a href="https://2020delivery.app.box.com/file/884958697078?s=arg6kqkh42q441t2u8osp3v7ny4yywz8">FEP training programme materials</a> provide guidance on the core tools and techniques used across all projects.
+        </div>
+      </details>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            DBU-specific skills (FEDUP)
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p>The DBU's <a href="https://docs.google.com/presentation/d/1lpylKirbA2BlQ5Jag3JbM4OQ9B-OiyCu/edit#slide=id.p1">FEPUP training programme materials</a> provide guidance on the specific tools, knowledge and techniques relevant for DBU projects which aren't covered in FEP courses.</p>
+        
+          <p>More information is also available here:</p>
+          <ul>
+            <li>Inspired by Marty Cagan</li>
+          </ul>
+        
+        </div>
+      </details>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Numerical analysis
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p>The PSC's <a href="https://2020delivery.app.box.com/folder/135540734658?s=sl8lq622l3tclknuk62zvcbf7ocw8ylm">training materials for analytics</a> are available to explore. They cover finance and accounting, modelling in Excel, and principles of data visualisation.</p>
+          
+          <p>Further information is available here:</p>
+          <ul>
+            <li>Course on Excel skills at <a href="https://chandoo.org/">Chandoo.org</a></li>
+            <li>Course on Business Analytics from <a href="https://online.hbs.edu/courses/business-analytics/">Harvard Business School</a></li>
+            <li>Fundamentals of Data Visualisation by Claus O Wilke</li>
+            <li>Books by Edward Tufte including Envisioning Information, Visual Explanations, and Beautiful Evidence</li>
+          </ul>
+          
+          <p>Discuss with the HR team or your career manager if you would like to explore any of these, or another book or course.</p>
+
+        </div>
+      </details>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Business analysis
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Many business analysis skills are explained in the <a href="https://2020delivery.app.box.com/file/884958697078?s=arg6kqkh42q441t2u8osp3v7ny4yywz8">FEP training programme</a>.
+        </div>
+      </details>
+
+      <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          User research
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        Details on user reserach methods and analysis can be found on the <a href="https://www.gov.uk/service-manual/user-research">GOV.UK website</a>, and more information is available here:
+
+        <ul>
+          <li>Rocket Survery Made Easy by Steve Krug</li>
+          <li>Observing the User Experience by Mike Kuniavsky</li>
+          <li>Interviewing Users by Steve Portigal</li>
+        </ul>
+
+        <p>Discuss with the HR team or your career manager if you would like to explore any of these, or another book or course.</p>
+
+      </div>
+    </details>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          User experience (UX) design 
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        
+        Information on this topic can be found here:
+
+        <ul>
+          <li><a href="https://www.coursera.org/specializations/interaction-design">Interaction Design Course</a> from UC San Diego on Coursera</li>
+          <li><a href="https://www.coursera.org/professional-certificates/google-ux-design">UX Design Course</a> from Google on Coursera</li>
+          <li>Books by Don Norman including The Design of Everyday Things, and Things that Make us Smart</li>
+          <li><a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag">The Web Content Accessibility Guidelines (WCAG)</a></li>
+        </ul>
+
+        <p>Discuss with the HR team or your career manager if you would like to explore any of these, or another book or course.</p>
+
+      </div>
+    </details>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third" id="navBar">
+
+      <style>
+        #navBar {
+           position: sticky;
+           top: 160px;
+         }
+       </style>
+       <script>
+         window.onscroll = function() {myFunction()};
+         var navBar = document.getElementByID("navBar");
+         var sticky = navBar.offsetTop;
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             navBar.classList.add("sticky");
+           } else {
+             navBar.classList.remove("sticky");
+           }
+         }
+       </script>
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Website navigation
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="home">
+                Home
+              </a>
+              <p></p>
+            </li>
+            <li>
+              <a href="Prototype">
+                GOV.UK Prototyping kit
+              </a>
+              <p style="font-style: italic; font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+            </li>
+            <li>
+              <a href="GDS">
+                GDS Standards
+              </a>
+              <p style="font-style: italic; font-size: 14px">What they are, why they're important, and how we follow them</p>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+{% endblock %}
