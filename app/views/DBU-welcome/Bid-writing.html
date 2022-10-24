@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Working in the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header"
+          id="myHeader"
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/"
+          style="font-family: 'Playfair Display';
+                font-size: 40px;
+                color: #1C1E57;
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display';
+                color: #1C1E57;
+                font-size: 15px;
+                font-weight: lighter;
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        DBU bid writing
+      </h1>
+      <p>Many of the projects we work on in the DBU are first advertised on  <a href="https://www.digitalmarketplace.service.gov.uk/">Digital Marketplace</a>. If you're assigned to the DBU, you may be asked to get involved with writing bids for this work.</p>
+
+      <p>There are a number of steps to writing, and winning, a bid. This page gives an overview of the key bid-writing stages, and includes links to resources that will help you improve your writing skills.</p>
+
+      <h2 class="govuk-heading-m">Writing 100 word answers</h2>
+      <p> For projects advertised on  <a href="https://www.digitalmarketplace.service.gov.uk/">Digital Marketplace</a>, the first stage of the application involves submitting a series of 100-word respones to demonstrate that The PSC meets the 'essential' and 'nice-to-have' skills and experience required to deliver the work.</p>
+
+      <p>Each answer is scored out of 3, depending on whether requirements are not met, met, or exceeded. The top scoring suppliers will be shortlisted, and invited to submit a written proposal and/or pitch for the work.</p>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Steps to writing a good 100 word answer
+          </span>
+        </summary>
+      <div class="govuk-details__text">
+        <ol class="govuk-list govuk-list--number govuk-list--spaced">
+          <li>Read through the tender, including the ‘essential’ and ‘nice to have’ criteria. Can we meet these requirements already, or would we need to find a partner?</li>
+          <li> Copy the 100 word answer master template into the project folder on google. Populate with the ‘essential’ and ‘nice to have’ questions</li>
+          <li>Identify the most relevant example for each question  <ol class="govuk-list govuk-list--number govuk-list--spaced">
+              <li>Try and use the most relevant example for the 1st question (ideally a case study with similar subject matter and the same / a similar client)</li>
+              <li>Aim for a mix of case studies that demonstrate breadth and depth of experience</li>
+              <li>If you’re not sure where to start, search for key terms in our 100 word answers database. This will help you identify case studies we've used for similar case studies before</li></ol>
+        <li>Follow the steps on the spreadsheet - either pasting in old answer and iterate until it addresses the question, or write a new answer from scratch. Each answer should explain:
+          <ol class="govuk-list govuk-list--number govuk-list--spaced">
+            <li>What we did</li>
+            <li>How we did it</li>
+            <li>What result this achieved (add quantitative stats if possible)</li></ol>
+            <li>Follow The PSC's bid writing style throughout.
+      </div>
+      </details>
+      <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Exercises to help you write a good 100 word answer
+            </span>
+          </summary>
+        <div class="govuk-details__text">
+          <ol class="govuk-list govuk-list--number govuk-list--spaced">
+            <li><a href="https://docs.google.com/spreadsheets/d/1Yw97x8b1VOlVtuNHZp0vHWNN8kydQh8pgqzCJPRCxfg/edit#gid=474309143/">Exercise 1</a></li>
+        </div>
+      </details>
+
+
+
+      <h2 class="govuk-heading-m">Writing a full proposal</h2>
+
+
+
+
+      </div>
+
+    <div class="govuk-grid-column-one-third" id="navBar">
+
+      <style>
+        #navBar {
+           position: sticky;
+           top: 160px;
+         }
+       </style>
+       <script>
+         window.onscroll = function() {myFunction()};
+         var navBar = document.getElementByID("navBar");
+         var sticky = navBar.offsetTop;
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             navBar.classList.add("sticky");
+           } else {
+             navBar.classList.remove("sticky");
+           }
+         }
+       </script>
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Website navigation
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="home">
+                Home
+              </a>
+              <p></p>
+            </li>
+            <li>
+              <a href="Prototype">
+                GOV.UK Prototyping kit
+              </a>
+              <p style="font-style: italic; font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+            </li>
+            <li>
+              <a href="GDS">
+                GDS Standards
+              </a>
+              <p style="font-style: italic; font-size: 14px">What they are, why they're important, and how we follow them</p>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+{% endblock %}
