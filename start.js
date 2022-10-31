@@ -56,3 +56,4 @@ function createSessionDataDefaults () {
   await collectDataUsage()
   await buildWatchAndServe()
 })()
+

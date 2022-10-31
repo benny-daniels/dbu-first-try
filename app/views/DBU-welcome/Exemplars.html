@@ -1,0 +1,202 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Working in the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header"
+          id="myHeader"
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/"
+          style="font-family: 'Playfair Display';
+                font-size: 40px;
+                color: #1C1E57;
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display';
+                color: #1C1E57;
+                font-size: 15px;
+                font-weight: lighter;
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Bid Exemplars
+      </h1>
+      <p>Before starting on the bid editing and writing exercises provided, please read through the following examples of 100 word bids The PSC has submitted, along with the criteria to which they are responding. Remember that each answer is scored from 1 to 3, depending on whether the client believed that their requirements were not met (1), met (2), or exceeded (3). Each bid included here recieved a score of 3.</p>
+
+      <h2 class="govuk-heading-m">Exemplars</h2>
+      
+      <div>
+      <h3 class="govuk-heading-s">Bid 1</h3>
+      <p><b>Criteria:</b> Experience of successful collaborative working, coaching and sharing knowledge with clients, particularly those with limited agile development experience</p>
+      <p><b>Bid:</b> Create/Change has supported National Retraining Scheme with delivery across 3 discoveries, 2 alphas and private beta. We’ve coached a policy team with no previous agile experience and helped them explore hypotheses and develop evidence through user-centred techniques to constructively challenge their existing thinking (see blog post https://dfedigital.blog.gov.uk/2019/04/12/nrs-transformation/).
+
+        Adopting user-centred design principles for policy development was a key reason for the NRS team winning a 2019 DfE Award.
+        
+        As a direct result of coaching and knowledge transfer from our practitioners, NRS has been actively building capability in product ownership and agile delivery.
+         </p>
+
+        <h3 class="govuk-heading-s">Bid 2</h3>
+
+        <p><b>Criteria:</b> Evidence of working at local government level i.e., Local Authorities or non-profitable organisations.</p>
+
+        <p><b>Bid:</b> The PSC works exclusively with the public sector. Our recent local government and non-profit experience includes: </p>
+
+          <ul class="govuk-list govuk-list--bullet">
+
+          <li>Working with all LAs to distribute ~£120m funding to ensure school transport was unaffected by Covid-19</li>
+          <li>Supporting Harrow Council to develop an economic and planning strategy to manage the impacts of Covid-19</li>
+          <li>Supporting Hastings Council to research the needs of social care users, resulting in a £3m+ initiative to establish physical and digital community hubs</li>
+          <li>Researching the characteristics of 370k vunerable frequent users of A&E for an internationally renowned charity.</li></ul>
+          
+         <p>Lord Kerslake, President of LGA, is our Strategic Board Advisor.</p>
+        </div>
+
+
+        <div>
+        <h3 class="govuk-heading-s">Bid 3</h3>
+
+        <p><b>Criteria:</b> Evidence of experience successfully developing products and services that adhere to robust standards when buying and building, such as the Technology Code of Practise and GDS Service Standards.</p>
+
+        <p><b>Bid:</b> The PSC has worked to the GDS Service Manual since 2014. We were involved in writing the Service Standard and Technology Code of Practice, and our team includes two trained Service Standard assessors. We are proud of our 100% record of passing assessments.</p>
+
+          <p>We work towards the Standards throughout projects, documenting evidence against each point and sub-point as we go. 
+          
+          Recent Government services achieving 'met' include:</p>
+          <ul class="govuk-list govuk-list--bullet">
+          <li>DfE: International Teacher Recruitment, National Retraining Scheme</li>
+          <li>FCDO: Emergency Travel Documents, Contact an Embassy, Manage Your Move</li>
+          <li>UK Space Agency: Space Surveillance and Tracking</li>
+          </ul>
+          <p>Collectively, these have saved HMG >£100m.
+        </p>
+      </div>
+
+      
+        <h3 class="govuk-heading-s">Bid 4</h3>
+
+        <p><b>Criteria:</b> Have experience of delivering alphas in line within the Government Service Manual</p>
+
+        <p><b>Bid:</b> We have delivered many successful alphas to the Government Service Manual, moving them to private beta and beyond. These include wholly new, data-driven services across several institutions:</p> 
+
+          <ul class="govuk-list govuk-list--bullet">
+
+          <li>Space surveillance and tracking for UKSA, including vast quantities of geospatial data from multiple sources</li>
+          <li>Peabody housing trust, transforming services including repairs and rents </li>
+          <li>Performance platform, GDS' data product, requiring cross-government inputs</li>
+        </ul>
+          <p>These have passed standard assessments where required (we have a 100% "met" record); saved the UK Government several million pounds; and delivered greatly improved outcomes for users. Our team includes a trained Service Standard assessor, ensuring our work is the highest standard.
+          </p>
+        
+
+        
+        <h3 class="govuk-heading-s">Bid 5</h3>
+
+        <p><b>Criteria:</b> Provide evidence of ability to prototype in code</p>
+
+        <p><b>Bid:</b> The PSC has strong prototype coding capability, built over many years developing effective GDS discoveries, alphas, betas and live services.
+
+          Depending on service, project and client needs, we use a variety of coding languages in which our entire teams are trained: Python, Ruby, low fi and hi fi prototypes and others. However, it is our preference when working on UK Government projects to use the GOV.UK Prototyping Kit.
+          
+          We have successfully employed the GOV.UK Prototyping Kit on various GDS standard requirements projects such as FCDO Emergency Travel Documents, DfE International Teacher Recruitment, and DfE Covid Response.</p>
+
+          <a href="Bid-writing.html" class="govuk-back-link">Back</a>
+          <a href="First-vs-Final-Draft.html" class="next">Start Exercises &raquo;</a>
+      </div>
+
+
+    <div class="govuk-grid-column-one-third" id="navBar">
+
+      <style>
+        #navBar {
+           position: sticky;
+           top: 160px;
+         }
+       </style>
+       <script>
+         window.onscroll = function() {myFunction()};
+         var navBar = document.getElementByID("navBar");
+         var sticky = navBar.offsetTop;
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             navBar.classList.add("sticky");
+           } else {
+             navBar.classList.remove("sticky");
+           }
+         }
+       </script>
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Website navigation
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="home">
+                Home
+              </a>
+              <p></p>
+            </li>
+            <li>
+              <a href="Prototype">
+                GOV.UK Prototyping kit
+              </a>
+              <p style="font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+            </li>
+            <li>
+              <a href="GDS">
+                GDS Standards
+              </a>
+              <p style="font-size: 14px">What they are, why they're important, and how we follow them</p>
+            </li>
+            <li>
+              <a href="DBU-work">
+                Working in the DBU
+              </a>
+              <p style="font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+{% endblock %}

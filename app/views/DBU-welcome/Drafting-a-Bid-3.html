@@ -1,0 +1,198 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – Intro to the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header" 
+          id="myHeader" 
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/" 
+          style="font-family: 'Playfair Display'; 
+                font-size: 40px; 
+                color: #1C1E57; 
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display'; 
+                color: #1C1E57; 
+                font-size: 15px; 
+                font-weight: lighter; 
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Drafting a Bid 3
+      </h1>
+      <p> For this exercise you are invited to practice and refine your bid writing skills. Below is a brief summary of a project The PSC has bid on, similar to as it would appear on the <a href="https://www.digitalmarketplace.service.gov.uk/digital-outcomes-and-specialists/opportunities">Digital Marketplace.</a> You will be asked to draft a potential 100 word bid for the project, with special attention given to the highlighted criteria. Please search for key terms within our <a href="https://2020delivery.app.box.com/file/488731763325?s=3pkxiaj1yxa0oe0hv1e2gyktzkjitmtn">database of 100 word answers</a> to gather examples used in previous bids to help you draft your response.</p>
+
+        <p>Remember to demonstrate how The PSC meets the 'essential' and 'nice-to-have' skills and experience highlighted by the advert. Once you click submit, you will be able to compare your draft bid to the bid The PSC submitted for this work. Each bid shown in this exercise will have recieved a score of 3, meaning it will have exceeded the criteria and may be seen as an exemplar.
+      </p>
+      <h2 class="govuk-heading-m">Bid 3</h2>
+
+     <h2 class="govuk-heading-m">Surrey County Council - Digital Transformation Partner</h2>
+
+    <p><b>Work summary:</b> Digital Partner to deliver against Focus Area 1: A detailed engagement and design programme, reviewing existing Change plans by applying ‘Digital’, ‘Data’ and ‘Agile Working’ lenses. Identify opportunities and the value to implement new service designs, solutions and/or working practices within existing council transformation programme (2019/20 and 2021/22). Deliver against Focus Area 2 - Run facilitated workshops to explore and develop the vision for how digital, data and agile working opportunities will support Surrey’s Strategic plans, e.g. the Surrey Health and Wellbeing strategy.</p>
+
+    <p><b>Criteria:</b> Referenced proof of experience of delivering improved customer outcomes and monetary savings within public sector services including Adults and Childrens social care, Special Educational Needs.</p>
+
+    <p>Tip: Remember to reflect on a previous case study to support your answer.</p>
+      <div class="govuk-form-group">
+        <div id="more-detail-hint" class="govuk-hint">
+          Type your bid here. Max 100 words.
+        </div>
+      </div>
+
+      <body style="text-align: left;">
+
+        <form action="Drafting-a-Bid-answer-3" method="post">
+          <textarea id="drafted bid 3" name="drafted bid 3" oninput="countWord()"
+          rows="10" cols="80">
+      </textarea>
+  
+      <p> Word Count:
+        <span id="show">0</span></p>
+  
+    <script>
+        function countWord() {
+  
+            // Get the input text value
+            var words = document
+                .getElementById("drafted bid 3").value;
+  
+            // Initialize the word counter
+            var count = 0;
+  
+            // Split the words on each
+            // space character
+            var split = words.split(' ');
+  
+            // Loop through the words and
+            // increase the counter when
+            // each split word is not empty
+            for (var i = 0; i < split.length; i++) {
+                if (split[i] != "") {
+                    count += 1;
+                }
+            }
+  
+            // Display it as output
+            document.getElementById("show")
+                .innerHTML = count;
+        }
+    </script>
+  
+      <br><br> 
+          <input type ="Submit" value="Submit">
+        </form>
+        <a href="Drafting-a-Bid-answer-2.html" class="govuk-back-link">Back</a>
+      
+    </div>
+
+
+
+
+
+      
+   
+
+
+  <div class="govuk-grid-column-one-third" id="navBar">
+
+    <style>
+      #navBar {
+         position: sticky;
+         top: 160px;
+       }
+     </style>
+     <script>
+       window.onscroll = function() {myFunction()};
+       var navBar = document.getElementByID("navBar");
+       var sticky = navBar.offsetTop;
+       function myFunction() {
+         if (window.pageYOffset > sticky) {
+           navBar.classList.add("sticky");
+         } else {
+           navBar.classList.remove("sticky");
+         }
+       }
+     </script>
+
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Website navigation
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="home">
+              Home
+            </a>
+            <p></p>
+          </li>
+          <li>
+            <a href="Prototype">
+              GOV.UK Prototyping kit
+            </a>
+            <p style="font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+          </li>
+          <li>
+            <a href="GDS">
+              GDS Standards
+            </a>
+            <p style="font-size: 14px">What they are, why they're important, and how we follow them</p>
+          </li>
+          <li>
+            <a href="DBU-work">
+              Working in the DBU
+            </a>
+            <p style="font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
+          </li>
+          <li>
+            <a href="Bid-writing.html">
+              Bid Writing
+            </a>
+            <p style="font-size: 14px">Bid writing tips and helpful exercises</p>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+</div>
+
+{% endblock %}

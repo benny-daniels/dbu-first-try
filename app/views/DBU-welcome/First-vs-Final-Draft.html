@@ -1,0 +1,253 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – Intro to the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header" 
+          id="myHeader" 
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/" 
+          style="font-family: 'Playfair Display'; 
+                font-size: 40px; 
+                color: #1C1E57; 
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display'; 
+                color: #1C1E57; 
+                font-size: 15px; 
+                font-weight: lighter; 
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+       First vs. Final Bid Drafts
+      </h1>
+      <p>
+        To become more familiar with the editing process behind bids and writing a succient bid, complete the following exercise.
+      </p>
+
+      <p>
+        You can find further examples of bids in our <a href="https://2020delivery.app.box.com/file/488731763325?s=3pkxiaj1yxa0oe0hv1e2gyktzkjitmtn">database</a>.
+      </p>
+
+      <p>You can also read more about the digital team and what we do on <a href="https://thepsc.co.uk/digital/">The PSC website</a>.
+      </p>
+
+      <h2 class="govuk-heading-m">First vs. Final Exercise</h2>
+
+      <p>Read the following bids, and select which bid you believe in the final draft. Keep some of the key criteria of the bids in mind:
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Demonstrable expertise in prototyping, designing and building services meeting user needs and GOV.UK guidelines for content design, service design and accessibility.</li>
+          <li>Demonstrate your team's experience of conducting discovery, including hom you conduct user research and your methodologies, in accordance with GDS/CDDO and GOV.UK standards.</li>
+          <li>Demonstrate experience in building a strong understanding of technological constraints, existing contracts, legislation and other existing processes within the context of the Authority's requirement.</li>
+        </ul>
+      </p>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-heading-m">
+              Bid 1
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="incorrect">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                We have prototyped many services worldwide, which have successfully moved from discovery and alpha through to live services. Services include:
+
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>Schools' Buying Platform (DfE) - prototyped and tested with teachers and back-office staff</li>
+                  <li>World Service foreign language websites (BBC) - with readers and journalists</li>
+                  <li>Emergency Travel Documents (FCDO) - with end-users and 3 separate back-offices</li>
+                  <li>Performance Platform (GDS) - with Ministers, data architects and service owners</li>
+                </ul>
+This breadth allows us to bring best practice to all our work. These services have passed service standard assessments; saved the UK Government several million pounds; and delivered greatly improved outcomes for users.	
+
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="correct">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                We delivered from discovery through public beta a space-debris awareness product, Monitor Your Satellites; a service requiring clear presentation of complex data from multiple sources. 
+                We followed GDS process throughout:
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>exploratory user research to discover user needs</li>
+                  <li>iterative prototyping with GDS kit</li>
+                  <li>extensive data-flow service design</li>
+                  <li>full design and build</li>
+                  <li>specific testing for users with accessibility needs, externally validated</li>
+                </ul>
+Other data-presentation services include: Schools' Buying Platform (DfE), Digital Service Review (CDPS), Performance Platform (GDS). We have a 100% pass record for service standard assessments; collectively these services have saved Government several million pounds; and delivered greatly improved outcomes for users.
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-heading-m">
+              Bid 2
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="incorrect">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                <p>DfE asked us to do a discovery project to help c. 22k schools make smarter procurement decisions.</p>
+                <p>We conducted extensive primary user research through interviews and surveys, secondary research into international best practice, and did extensive business and data analysis of current spending profiles including validating/prioritising user needs and multiple regression analysis to ensure international comparisons were valid.</p>
+                <p>We recommended a strategy including a digital marketplace, peer-to-peer online support networks, and an upskilling/ professionalisation programme for school business managers. This was approved (alpha then beta) by the Minister, is on track for £1bn savings, and has been adopted internationally (South Africa).</p>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="correct">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                <p>DfE asked us to Discover how to help 22k schools make smarter procurement decisions.</p>
+ 
+                <p>Working to GDS standards throughout, we started with meta-review of existing work and current spending analysis. Primary user research was interviews and surveys, generating key personas with specific needs which we validated and prioritised in synthesis sessions. We supplemented with secondary research into international experience.</p>
+                 
+                <p>We recommended a digital marketplace, upskilling/ professionalisation of business managers, and peer-to-peer support networks. This strategy was approved by the SoS, is delivering £1bn savings, has been used as an exemplar by the UK Government Innovation team and has been adopted internationally.</p>
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-heading-m">
+              Bid 3
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="correct">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                <p>Our team-The PSC, Peter Smith ("Bad Buying"), and CURSHAW- have deep experience building this specific understanding.</p>
+                <p>Recently we delivered a discovery to identify improvements in transparency of public procurement, corporate ownership, and the commercial lifecycle. (World Bank estimated 70% of large corruption cases involve anonymous companies).</p>
+                <p>We researched internationally, exploring technological constraints and linkages between procurement system elements (egs. supplier registration, existing contract lifespans) and domestic legislation, open data, and registers of company beneficial ownership.</p>
+                <p>We delivered a successful prototype combining data on contracting and beneficial ownership to support anti-corruption measures. Other example: developing supplier relationship management capability for CCS.</p>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="incorrect">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                <p>The PSC built supplier relationship management capabilities for CCS, working across five Government departments and their ALBs with multifaceted supply and delivery chains, through 26 workstreams.</p>
+ 
+                <p>The programme covered ~£26bn spend, through a complex delivery chain of suppliers, CGDs/ALBs and front-line teams and procurement leaders, adhering to EU and UK procurement regulations. It was responsible for improved outcomes despite limited levers of control.</p>
+                 
+                <p>The programme was evaluated by GIAA in 2019, achieving an unprecedented top audit score.</p>
+
+                <p>We have delivered numerous additional successful projects in complex settings including education, health and care, housing and financial services.</p>
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+      <a href="Bid-writing.html" class="govuk-back-link">Back</a>
+      <a href="First-vs-Final-Draft-answers.html" class="next">Next&raquo;</a>
+    </div>
+
+
+
+  <div class="govuk-grid-column-one-third" id="navBar">
+
+    <style>
+      #navBar {
+         position: sticky;
+         top: 160px;
+       }
+     </style>
+     <script>
+       window.onscroll = function() {myFunction()};
+       var navBar = document.getElementByID("navBar");
+       var sticky = navBar.offsetTop;
+       function myFunction() {
+         if (window.pageYOffset > sticky) {
+           navBar.classList.add("sticky");
+         } else {
+           navBar.classList.remove("sticky");
+         }
+       }
+     </script>
+
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Website navigation
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="Prototype">
+              GOV.UK Prototyping kit
+            </a>
+            <p style="font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+          </li>
+          <li>
+            <a href="GDS">
+              GDS Standards
+            </a>
+            <p style="font-size: 14px">What they are, why they're important, and how we follow them</p>
+          </li>
+          <li>
+            <a href="DBU-work">
+              Working in the DBU
+            </a>
+            <p style="font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
+          </li>
+          <li>
+            <a href="Bid-writing.html">
+              Bid Writing
+            </a>
+            <p style="font-size: 14px">Bid writing tips and helpful exercises</p>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+  </div>
+
+{% endblock %}

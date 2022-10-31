@@ -57,30 +57,82 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        Introduction to the Digital Business Unit
+        Bid Editing 3
       </h1>
-      <p>
-        The Digital Business Unit is one of three Business Units at The PSC.
+      <p> For the following exercise, you will try to edit and improve a bid submitted by The PSC. Each of the bids shown in this exercise have scored 2 out of 3, meaning they  met the criteria but did not exceed the criteria, and thus have some room for improvement.</p>
+      <p> Below find the criteria and the bid The PSC submitted. Edit the bid in the space provided. Once you click submit, you will be able to compare your edited bid to the bid The PSC submitted, alongside the feedback the client provided The PSC.
       </p>
+      <h2 class="govuk-heading-m">Bid 3</h2>
 
-      <p>
-        We harness data science and technology for public services to deliver impactful digital solutions.
-      </p>
+      <p><b>Criteria:</b> Experience of similar initiatives such as resource management or volunteer management</p>
 
-      <p>
-        You can find examples of our work in <a href="https://2020delivery.app.box.com/folder/167722564970?s=8nj8ykwcwil98x3phfks2onoi5sf1p7e">our case study archive</a>.
-      </p>
+      <p><b>Bid:</b> We have deep experience in both resource management and volunteer management. Our track record includes:</p>
 
-      <p>You can also read more about the team and what we do on <a href="https://thepsc.co.uk/digital/">The PSC website</a>.
-      </p>
+      <ul class="govuk-list govuk-list--bullet">
 
-      <h2 class="govuk-heading-m">About this site</h2>
+        <li>Designing and forecasting national resource management requirements for 10k+ healthcare professionals over a five year period for Cancer Research UK.</li>
+        <li>Predicting demand and developing strategies for plugging supply gaps in teaching provision for the Department for Education.</li>
+        <li>Forecasting and providing resources at scale for five major central government departments.</li>
+        <li>On a pro bono basis, our team also has experience providing volunteering support for Covid-19 vaccinations.</li>
+        
+        </ul>
+        <p>We have worked with enterprise and bespoke/custom build resource management systems.</p>
 
-      <p>This site has been developed using the <a href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK prototype kit</a> to answer some common questions about the DBU, and to provide quick links to helpful sources of information.</p>
+    
+      <div class="govuk-form-group">
+        <h2 class="govuk-heading-m">Edited Bid 3</h2>
+        <div id="more-detail-hint" class="govuk-hint">
+          Type your edited bid here. Max 100 words.
+        </div>
+      </div>
 
-      <p>Please explore the information here, and let us know if you come across something to add!</p>
 
-    </div>
+    <body style="text-align: left;">
+
+      <form action="Bid-editing-answer-3" method="post">
+        <textarea id="edited-bid-3" name="edited-bid-3" oninput="countWord()"
+        rows="10" cols="80">
+    </textarea>
+
+    <p> Word Count:
+      <span id="show">0</span></p>
+
+  <script>
+      function countWord() {
+
+          // Get the input text value
+          var words = document
+              .getElementById("edited-bid-3").value;
+
+          // Initialize the word counter
+          var count = 0;
+
+          // Split the words on each
+          // space character
+          var split = words.split(' ');
+
+          // Loop through the words and
+          // increase the counter when
+          // each split word is not empty
+          for (var i = 0; i < split.length; i++) {
+              if (split[i] != "") {
+                  count += 1;
+              }
+          }
+
+          // Display it as output
+          document.getElementById("show")
+              .innerHTML = count;
+      }
+  </script>
+
+    <br><br> 
+        <input type ="Submit" value="Submit">
+      </form>
+  
+      <a href="Bid-editing-answer-2.html" class="govuk-back-link">Back</a>
+  </div>
+
 
   <div class="govuk-grid-column-one-third" id="navBar">
 
@@ -110,6 +162,12 @@
       <nav role="navigation" aria-labelledby="subsection-title">
         <ul class="govuk-list govuk-!-font-size-16">
           <li>
+            <a href="home">
+              Home
+            </a>
+            <p></p>
+          </li>
+          <li>
             <a href="Prototype">
               GOV.UK Prototyping kit
             </a>
@@ -127,16 +185,10 @@
             </a>
             <p style="font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
           </li>
-          <li>
-            <a href="Bid-writing.html">
-              Bid Writing
-            </a>
-            <p style="font-size: 14px">Bid writing tips and helpful exercises</p>
-          </li>
         </ul>
       </nav>
     </aside>
   </div>
-  </div>
+</div>
 
 {% endblock %}

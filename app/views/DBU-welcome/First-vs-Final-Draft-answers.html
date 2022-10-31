@@ -1,0 +1,186 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – Intro to the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header" 
+          id="myHeader" 
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/" 
+          style="font-family: 'Playfair Display'; 
+                font-size: 40px; 
+                color: #1C1E57; 
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display'; 
+                color: #1C1E57; 
+                font-size: 15px; 
+                font-weight: lighter; 
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        First vs. Final Draft Answers
+      </h1>
+      <p> Below find a table summary of the correct answers (final drafts). The feedback provided remarks on the improvements made from the first draft, as well as some potential next steps to improve the final draft further.
+      </p>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Practice Answers</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Bid</th>
+            <th scope="col" class="govuk-table__header">Final Draft</th>
+            <th scope="col" class="govuk-table__header">Feedback</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Bid 1</th>
+            <td class="govuk-table__cell">We delivered from discovery through public beta a space-debris awareness product, Monitor Your Satellites; a service requiring clear presentation of complex data from multiple sources. 
+              We followed GDS process throughout:
+              <ul class="govuk-list govuk-list--bullet">
+                <li>exploratory user research to discover user needs</li>
+                <li>iterative prototyping with GDS kit</li>
+                <li>extensive data-flow service design</li>
+                <li>full design and build</li>
+                <li>specific testing for users with accessibility needs, externally validated</li>
+              </ul>
+Other data-presentation services include: Schools' Buying Platform (DfE), Digital Service Review (CDPS), Performance Platform (GDS). We have a 100% pass record for service standard assessments; collectively these services have saved Government several million pounds; and delivered greatly improved outcomes for users.
+</td>
+            <td class="govuk-table__cell">
+              <li>Final draft focuses more on how The PSC has followed GDS process as opposed to simply listing services</li>
+              <li>Final draft includes quantifiable benchmark of 100% pass record</li>
+              <li>However, the final draft could speak further about data processes rather than collection</li></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Bid 2</th>
+            <td class="govuk-table__cell">  <p>DfE asked us to Discover how to help 22k schools make smarter procurement decisions.</p>
+ 
+              <p>Working to GDS standards throughout, we started with meta-review of existing work and current spending analysis. Primary user research was interviews and surveys, generating key personas with specific needs which we validated and prioritised in synthesis sessions. We supplemented with secondary research into international experience.</p>
+               
+              <p>We recommended a digital marketplace, upskilling/ professionalisation of business managers, and peer-to-peer support networks. This strategy was approved by the SoS, is delivering £1bn savings, has been used as an exemplar by the UK Government Innovation team and has been adopted internationally.</p></td>
+            <td class="govuk-table__cell"><li>Final draft clearly outlines GDS standards and the primay user research process in Discovery</li><li>Final draft speaks to the project's success with the UK government</li></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Bid 3</th>
+            <td class="govuk-table__cell">                <p>Our team-The PSC, Peter Smith ("Bad Buying"), and CURSHAW- have deep experience building this specific understanding.</p>
+              <p>Recently we delivered a discovery to identify improvements in transparency of public procurement, corporate ownership, and the commercial lifecycle. (World Bank estimated 70% of large corruption cases involve anonymous companies).</p>
+              <p>We researched internationally, exploring technological constraints and linkages between procurement system elements (egs. supplier registration, existing contract lifespans) and domestic legislation, open data, and registers of company beneficial ownership.</p>
+              <p>We delivered a successful prototype combining data on contracting and beneficial ownership to support anti-corruption measures. Other example: developing supplier relationship management capability for CCS.</p></td>
+            <td class="govuk-table__cell"><li>Final draft quickly and clearly outlines the team partners</li><li>Focuses more on the team's role in delivering a discovery and their understanding of technological constraints rather than the programme itself</li><li>Final draft also lists another example</li></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Reminder of some of the key criteria of writing a bid:
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Demonstrable expertise in prototyping, designing and building services meeting user needs and GOV.UK guidelines for content design, service design and accessibility.</li>
+          <li>Demonstrate your team's experience of conducting discovery, including hom you conduct user research and your methodologies, in accordance with GDS/CDDO and GOV.UK standards.</li>
+          <li>Demonstrate experience in building a strong understanding of technological constraints, existing contracts, legislation and other existing processes within the context of the Authority's requirement.</li>
+        </ul>
+      </p>
+
+    
+
+      <a href="Bid-writing-exercise" class="govuk-back-link">Back</a>
+      <a href="Bid-editing"next">Next Exercise &raquo;</a>
+    </div>
+
+
+  <div class="govuk-grid-column-one-third" id="navBar">
+
+    <style>
+      #navBar {
+         position: sticky;
+         top: 160px;
+       }
+     </style>
+     <script>
+       window.onscroll = function() {myFunction()};
+       var navBar = document.getElementByID("navBar");
+       var sticky = navBar.offsetTop;
+       function myFunction() {
+         if (window.pageYOffset > sticky) {
+           navBar.classList.add("sticky");
+         } else {
+           navBar.classList.remove("sticky");
+         }
+       }
+     </script>
+
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Website navigation
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="Prototype">
+              GOV.UK Prototyping kit
+            </a>
+            <p style="font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+          </li>
+          <li>
+            <a href="GDS">
+              GDS Standards
+            </a>
+            <p style="font-size: 14px">What they are, why they're important, and how we follow them</p>
+          </li>
+          <li>
+            <a href="DBU-work">
+              Working in the DBU
+            </a>
+            <p style="font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
+          </li>
+          <li>
+            <a href="Bid-writing.html">
+              Bid Writing
+            </a>
+            <p style="font-size: 14px">Bid writing tips and helpful exercises</p>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+  </div>
+
+{% endblock %}

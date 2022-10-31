@@ -1,0 +1,197 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – Intro to the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header" 
+          id="myHeader" 
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/" 
+          style="font-family: 'Playfair Display'; 
+                font-size: 40px; 
+                color: #1C1E57; 
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display'; 
+                color: #1C1E57; 
+                font-size: 15px; 
+                font-weight: lighter; 
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Bid Editing
+      </h1>
+      <p> For the following exercise, you will try to edit and improve a bid submitted by The PSC. Each of the bids shown in this exercise have scored 2 out of 3, meaning they  met the criteria but did not exceed the criteria, and thus have some room for improvement.</p>
+      <p> Below find the criteria and the bid The PSC submitted. Edit the bid in the space provided. Once you click submit, you will be able to compare your edited bid to the bid The PSC submitted, alongside the feedback the client provided The PSC.
+      </p>
+      <h2 class="govuk-heading-m">Bid 1</h2>
+
+      <p><b>Criteria:</b> User centred design - Demonstrate experience in understanding how to meet the needs of a diverse range of users, and a demonstrable commitment to accessibility</p>
+
+      <p><b>Bid:</b> We took a fully user-centred approach to the end-to-end development of FCDO's Emergency Travel Documents service, for citizens with lost/stolen passports needing to get home.
+
+        The service had to be universally accessible, including to users with disabilities (e.g. dyslexia, visual impairments), limited digital literacy/skills, and hardware/connectivity issues, as well as mobile responsive. 
+        
+        We undertook extensive user-testing of the solution, working with FCDO's disability network, the Digital Accessibility Centre, and charities including AgeUK. 
+        
+        This resulted in a WCAG-compliant, highly-usable live service which passed Service Standard Assessment. It successfully repatriates c.30k people annually and receives completion and satisfaction scores of >80%. </p>
+
+    
+      <div class="govuk-form-group">
+        <h2 class="govuk-heading-m">Edited Bid 1</h2>
+        <div id="more-detail-hint" class="govuk-hint">
+          Type your edited bid here. Max 100 words.
+        </div>
+      </div>
+
+      <body style="text-align: left;">
+
+        <form action="Bid-editing-answer" method="post">
+          <textarea id="edited-bid" name="edited-bid" oninput="countWord()"
+          rows="10" cols="80">
+      </textarea>
+  
+      <p> Word Count:
+        <span id="show">0</span></p>
+  
+    <script>
+        function countWord() {
+  
+            // Get the input text value
+            var words = document
+                .getElementById("edited-bid").value;
+  
+            // Initialize the word counter
+            var count = 0;
+  
+            // Split the words on each
+            // space character
+            var split = words.split(' ');
+  
+            // Loop through the words and
+            // increase the counter when
+            // each split word is not empty
+            for (var i = 0; i < split.length; i++) {
+                if (split[i] != "") {
+                    count += 1;
+                }
+            }
+  
+            // Display it as output
+            document.getElementById("show")
+                .innerHTML = count;
+        }
+    </script>
+  
+      <br><br> 
+          <input type ="Submit" value="Submit">
+        </form>
+
+        <a href="Bid-writing.html" class="govuk-back-link">Back</a>
+      
+    </div>
+
+
+
+
+
+      
+   
+
+
+  <div class="govuk-grid-column-one-third" id="navBar">
+
+    <style>
+      #navBar {
+         position: sticky;
+         top: 160px;
+       }
+     </style>
+     <script>
+       window.onscroll = function() {myFunction()};
+       var navBar = document.getElementByID("navBar");
+       var sticky = navBar.offsetTop;
+       function myFunction() {
+         if (window.pageYOffset > sticky) {
+           navBar.classList.add("sticky");
+         } else {
+           navBar.classList.remove("sticky");
+         }
+       }
+     </script>
+
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Website navigation
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="home">
+              Home
+            </a>
+            <p></p>
+          </li>
+          <li>
+            <a href="Prototype">
+              GOV.UK Prototyping kit
+            </a>
+            <p style="font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+          </li>
+          <li>
+            <a href="GDS">
+              GDS Standards
+            </a>
+            <p style="font-size: 14px">What they are, why they're important, and how we follow them</p>
+          </li>
+          <li>
+            <a href="DBU-work">
+              Working in the DBU
+            </a>
+            <p style="font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+</div>
+
+{% endblock %}

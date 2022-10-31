@@ -1,0 +1,162 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – Intro to the DBU
+{% endblock %}
+
+{% block header %}
+<header>
+    <style>
+     header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999
+      }
+    </style>
+    <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementByID("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <div class="header" 
+          id="myHeader" 
+          style="background: #fede7b;
+                padding: 10px 20px">
+      <div>
+      <a href="https://thepsc.co.uk/" 
+          style="font-family: 'Playfair Display'; 
+                font-size: 40px; 
+                color: #1C1E57; 
+                font-weight: bolder">
+          The PSC</a>
+      </div>
+      <div>
+      <p style="font-family: 'Playfair Display'; 
+                color: #1C1E57; 
+                font-size: 15px; 
+                font-weight: lighter; 
+                font-style: italic">
+        Digital Business Unit</p>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Bid Draft Feedback 2
+      </h1>
+      <p> Reflect on your drafted bid and compare your version to the bid submitted by The PSC for this project and criteria. 
+      </p>
+
+      <h2 class="govuk-heading-m">STA digitally modifiable paper-based tests: discovery phase</h2>
+
+      <p><b>Criteria:</b> Demonstrate experience of delivering services for UK government departments or public bodies.</p>
+
+      <p><b>The Bid Submitted by The PSC:</b></p>
+
+      
+      <p>We have delivered many services for Government departments and public bodies, transforming paper-based services into digital transactions and creating wholly new digital services. Services include:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Schools' Buying Platform (DfE)</li>
+        <li>World Service foreign language websites (BBC)</li>
+        <li>Emergency Travel Documents (FCDO)</li>
+        <li>Performance Platform (GDS)</li>
+        <li>Coordinate My Care (Healthy London Partnership)</li></ul>
+        
+        <p>This breadth of experience allows us to bring best practice to all our work. These services have passed service standard assessments where required; saved the UK Government several million pounds; and delivered greatly improved outcomes for users. Our team includes a trained Service Standard assessor ensuring that work is the highest standard.
+        </p>
+
+        <p><b>Feedback given on submitted bid:</b> Strong evidence, with reference to transforming paper based to digital services which the panel deemed relavant. </p>
+
+        <p><b>Your Bid:</b><dd class="govuk-summary-list__value">
+          {{ data['drafted bid 2'] }}
+        </dd></p>
+
+
+
+      </form>
+
+
+
+    <p>Reflect upon whether your bid similarly follows The PSC bid writing style and effectively responds to the project criteria.</p>
+      <a href="Drafting-a-Bid-2" class="govuk-back-link">Back</a>
+      <a href="Drafting-a-Bid-3" class="next">Next &raquo;</a>
+    </div>
+    <div class="govuk-grid-column-one-third" id="navBar">
+
+      <style>
+        #navBar {
+           position: sticky;
+           top: 160px;
+         }
+       </style>
+       <script>
+         window.onscroll = function() {myFunction()};
+         var navBar = document.getElementByID("navBar");
+         var sticky = navBar.offsetTop;
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             navBar.classList.add("sticky");
+           } else {
+             navBar.classList.remove("sticky");
+           }
+         }
+       </script>
+  
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Website navigation
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="Prototype">
+                GOV.UK Prototyping kit
+              </a>
+              <p style="font-size: 14px">What it is, how the DBU uses it, and where to go for help</p>
+            </li>
+            <li>
+              <a href="GDS">
+                GDS Standards
+              </a>
+              <p style="font-size: 14px">What they are, why they're important, and how we follow them</p>
+            </li>
+            <li>
+              <a href="DBU-work">
+                Working in the DBU
+              </a>
+              <p style="font-size: 14px">Types of projects, DBU teams, and skills to learn and develop</p>
+            </li>
+            <li>
+              <a href="Bid-writing.html">
+                Bid Writing
+              </a>
+              <p style="font-size: 14px">Bid writing tips and helpful exercises</p>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+  </div>
+
+
+  
+  </div>
+
+{% endblock %}
